@@ -15,8 +15,9 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- task: DotNetCoreCLI@2
+- script: dotnet test PipelineXUnit --logger trx
+- task: PublishTestResults@2
+condition: succeedOrFailed()
   inputs:
-    command: test
-    projects: 'PipelineXUnit.csproj'
-    arguments: '--configuration $(buildConfiguration)'
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
