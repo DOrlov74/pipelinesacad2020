@@ -12,7 +12,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
    # Azure service connection established during pipeline creation
-  azureSubscription: 'demopipelines'
+  azureSubscription: 'demopipeline'
   appName: 'denisdemopipeline'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
