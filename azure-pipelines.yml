@@ -11,6 +11,11 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+   # Azure service connection established during pipeline creation
+  azureSubscription: 'Computencial(5a0d946c-4db4-4de4-bf47-49efef177a86)'
+  appName: 'denisdemopipeline'
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
@@ -21,3 +26,20 @@ steps:
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: publish
+    publishWebProjects: true
+    arguments: '--configuration $(buildconfiguration) --output $()Build.ArtifactStagingDirectory'
+    zipAfterPublish: true
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'PipelineApi'
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: $(azureSubscription)
+    appType: 'webAppLinux'
+    appName: $(appName)
+    package: '$(System.ArtifactsDirectory)/**/*.zip'
+    runtimeStack: 'DOTNETCORE|5.0'
