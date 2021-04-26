@@ -12,8 +12,8 @@ pool:
 variables:
   buildConfiguration: 'Release'
    # Azure service connection established during pipeline creation
-  azureSubscription: 'demopipeline'
-  appName: 'denisdemopipeline'
+  azureSubscription: 'demopipelinedenis'
+  appName: 'acad2020pipelinedenis'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
