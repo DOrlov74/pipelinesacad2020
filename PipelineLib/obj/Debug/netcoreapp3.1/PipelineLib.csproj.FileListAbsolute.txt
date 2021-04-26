@@ -1,0 +1,9 @@
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\bin\Debug\netcoreapp3.1\PipelineLib.deps.json
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\bin\Debug\netcoreapp3.1\PipelineLib.dll
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\bin\Debug\netcoreapp3.1\PipelineLib.pdb
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\obj\Debug\netcoreapp3.1\PipelineLib.csprojAssemblyReference.cache
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\obj\Debug\netcoreapp3.1\PipelineLib.AssemblyInfoInputs.cache
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\obj\Debug\netcoreapp3.1\PipelineLib.AssemblyInfo.cs
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\obj\Debug\netcoreapp3.1\PipelineLib.csproj.CoreCompileInputs.cache
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\obj\Debug\netcoreapp3.1\PipelineLib.dll
+G:\Dan\Rumos\Repos_DevOps\PipeLineAcad2020\PipelineLib\obj\Debug\netcoreapp3.1\PipelineLib.pdb
